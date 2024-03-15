@@ -67,3 +67,13 @@ switch (year) {
        
 }
 
+//logical operator
+
+let age2=26;
+
+if(age2>=18 && age2<=25){
+    console.log("Your Eligible Candidate");
+}
+else{
+    console.log("Not applicable");
+}
