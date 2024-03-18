@@ -100,6 +100,7 @@
 // }
 
 
+//String Literals 
 
 let fname="praveen"
 
@@ -110,8 +111,31 @@ for (const prop in obj) {
   console.log(`${prop} = ${obj[prop]}`);
 }
 
+
+const acd = 5;
+const bc = 10;
+console.log(`Fifteen is ${acd + bc}  and\nnot  ${2 * acd + bc}.`);
 // Logs:
 // "obj.a = 1"
 // "obj.b = 2"
 // "obj.c = 3"
 
+//nested for loop
+let nums=[]
+for(let i=0;i<3;i++){
+  nums.push([])
+  for(let j=0;j<3;j++){
+     nums[i].push(j)
+  }
+} 
+console.log(nums);
+console.table(nums)
+
+//For of loop
+let avc=["tiya","haron","kadhar","umar,"]
+for(let avcs of avc){
+  console.log(avcs);
+}
+
+
+//
