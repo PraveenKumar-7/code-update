@@ -30,9 +30,9 @@ for(i=0;i<150;i++){
  a=Number(a)
  console.log(a,typeof a);
 
- let voter=12;
- const res=voter>=18?"your are Eligible":"Not Eligible"
- console.log(res);
+//  let voter=12;
+//  const res=voter>=18?"your are Eligible":"Not Eligible"
+//  console.log(res);
 
  const objl={Name:"Praveen",Age:23}
 
@@ -52,3 +52,5 @@ for(i=0;i<150;i++){
  } 
 console.log(nums);
 console.table(nums)
+
+//

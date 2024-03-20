@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="idn">Node js</p>
+
+    <p id="idn">Javascript Developer</p>
+
+    <!--getelementbyName -->
+    <label for="test"><input type="radio" name="language" value="js">Good</label>
+    <label for="text1"><input type="radio" name="language" value="Python">Intermidate</label>
+
+    <!--getElementByTagName-->
+
+    <h1>Hello</h1>
+    <h1>Praveen</h1>
+    <h1>Welcome</h1>
+    <h1>To MY Page</h1>
+
+    <!--geElementClassName-->
+    <h1 class="Msg3">Vijay</h1>
+    <div id="container">
+        <h1 class="Msg3">GoGo</h1>
+        <h2 class="Msg3">js</h1>
+    </div>
+
+    <script>
+        //getElementById
+        // let msg = document.getElementById('idn').innerHTML = 'Java Developer';
+        // console.log(msg);
+
+        // //getElementbyname
+        // let msg1 = document.getElementsByName('language');
+
+        // // getelementbyTagName
+        // let msg2 = document.getElementsByTagName("h1")
+        // console.log(msg2);
+
+
+        //getElementClassName
+
+        // let sgm = document.getElementClassName("Msg3")
+        // console.log(sgm);
+       let skn=document.getElementById("container")
+      let sim=skn.getElementsByClassName("Msg3")
+      console.log(sim);
+
+    </script>
+</body>
+
+</html>
