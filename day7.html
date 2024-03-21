@@ -30,6 +30,31 @@
         <h2 class="Msg3">js</h1>
     </div>
 
+    <h2 class="JK">HI</h2>
+    <h2 class="JK">Byee</h2>
+    <p id="bnm"></p>
+
+    <!--Trvesing Elements-->
+    <div class="cls">
+        <p class="tr">Where are u 1</p>
+        <p class="trp">Where are u 2</p>
+        <p class="tr">Where are u 3</p>
+    </div>
+
+
+    <!--Manipulating the HTML ELEMENTS-->
+    <ul id="menu">
+        <li>HOME</li>
+        <li>SERVICE</li>
+        <li>ABOUT</li>
+    </ul>
+    <!--<button onclick="myfun()">Click it</button>-->
+
+
+     
+    <input type="text" id="username" placeholder="username">
+
+    <button id="btn">Click it</button>
     <script>
         //getElementById
         // let msg = document.getElementById('idn').innerHTML = 'Java Developer';
@@ -47,10 +72,89 @@
 
         // let sgm = document.getElementClassName("Msg3")
         // console.log(sgm);
-       let skn=document.getElementById("container")
-      let sim=skn.getElementsByClassName("Msg3")
-      console.log(sim);
+        //    let skn=document.getElementById("container")
+        //   let sim=skn.getElementsByClassName("Msg3")
+        //   console.log(sim);
 
+        //Query selector
+
+        const vij = document.querySelectorAll(".JK");
+        document.getElementById('bnm').innerHTML = 'This For testing purpose:' + vij[1].innerHTML;
+
+        //Trvesing Elements parent node
+        // let txt=document.querySelector(".tr");
+        // console.log(txt.parentNode);
+
+        ////Trvesing Elements child node
+        //     let txt = document.querySelector(".cls")
+        //    console.log(txt.lastChild)
+        //    console.log(txt.firstElementChild);
+        //    console.log(txt.lastElementChild);
+        //    console.log(txt.childNodes);
+
+
+        //sibbling Elements
+        let txt1 = document.querySelector(".trp")
+        console.log(txt1.previousElementSibling);
+
+        //createelement() and add the element in the body of the document using appendchild method and also adding the id or classname for the element.
+        let crt = document.createElement("div")
+        crt.innerHTML = "<P>WELCOME MY FRIEND</p>"
+        crt.id = "enj"
+        console.log(crt);
+        document.body.appendChild(crt);
+
+        //appendchild()
+        // let list=document.createElement("li")
+        // list.innerHTML="Contact";
+        // menu.appendChild(list)
+
+        // text content
+        // let list = document.getElementById("menu")
+        // //console.log(list.textContent);
+        //  list.textContent="Hello Ram";
+        //inneradjacenctHTML()method
+        let menu = document.getElementById("menu");
+        //menu.insertAdjacentHTML("afterbegin","<li>Contact</li>")
+
+        //replacechild()
+        //  function myfun(){
+        //     const elem=document.getElementById("menu").children[0];
+        //     const newno=document.createTextNode("Contact")
+        //     elem.replaceChild(newno,elem.childNodes[0])
+
+        //  }
+
+        // remove child method
+        let elem = document.getElementById("menu")
+        elem.removeChild(menu.lastElementChild)
+
+        //attribute methods
+ let inpu=document.getElementById("username")
+ //console.log(inpu.attributes);
+       
+ //get attribute()
+    console.log(inpu.getAttribute("placeholder"));
+
+   //set attribute
+   inpu.setAttribute("Class","v12")
+
+    console.log(inpu);
+
+    //has attribute
+    console.log(inpu.hasAttribute("class"));
+
+    //remove attribute
+    inpu.removeAttribute("placeholder")
+    console.log(inpu);
+
+    let btn = document.querySelector('#btn');
+
+function display() {
+    alert('It was clicked!');
+}
+
+btn.addEventListener('click',display());
     </script>
 </body>
 
