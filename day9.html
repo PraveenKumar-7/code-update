@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 700px;
+            height: 300px;
+        }
+
+        #tes {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="getel">Hello EveryOne</p>
+    <input type="text" name="lang" placeholder="username">
+    <input type="password" name="lang" placeholder="password">
+
+    <h1 id="que">Hi buddy</h1>
+    <h1 id="que">Welcome</h1>
+    <p id="vue"></p>
+    <div class="cls">
+        <h1 class="Lik">HOME</h1>
+        <h1 class="Lik">SERVICE</h1>
+        <h1 class="Lik">ABOUT</h1>
+        <button onclick="mfunc()">Submit</button>
+    </div>
+
+
+    <div class="clas">
+        <p class="rp">Hello</p>
+        <p class="rip">Praveen</p>
+        <p class="rp">Welcome</p>
+
+    </div>
+    <ul id="lis">
+        <li class="kl">School</li>
+        <li class="kl">College</li>
+        <li class="kl">Work</li>
+    </ul>
+
+    <!--INLINE Event Handler-->
+    <button onclick="this.style.color='red'">Click Me</button>
+
+    <!--function event handling-->
+    <div id="div"></div>
+    <button onclick="myfun1()">Try It</button>
+
+
+    <!---Multiple function event handling-->
+    <div id="tes" onmouseenter="myfun2();myon();">Hello am Coming</div>
+
+
+    <!--Onclick event-->
+
+    <form action="ret">
+        <input type="button" onchange="say()"  id="btn">
+    </form>
+     <button id="vi" ondblclick="change()">color</button>
+
+    <input type="text" onkeydown="key()">
+
+    <script>
+        //function event handling
+        function myfun1() {
+            let win = document.getElementById("div")
+            win.style.backgroundColor = 'yellow';
+        }
+
+
+        //Multiple function eventhandling 
+        function myfun2() {
+            document.getElementById("tes").style.fontSize = "25px";
+        }
+        function myon() {
+            document.getElementById("tes").style.color = "Blue";
+        }
+
+        //
+         function say(){
+            alert('Error Message ')
+         }
+         function change(){
+            document.getElementById('vi').style.color="red"
+         }
+
+
+         function key(){
+            let wen=document.getElementsByTagName("INPUT");
+            wen.style.backgroundColor="yellow";
+            wen.style.color="red";
+         }
+
+
+        //yesterday learning topics but today i pratice on those topics 
+
+        //getELemntBYID
+        let ele1 = document.getElementById("getel")
+        console.log(ele1, typeof ele1);
+        //GetElementByName
+        let Ele1 = document.getElementsByName("lang")
+        console.log(Ele1, typeof Ele1);
+        //getElementByTagname
+        let ele2 = document.getElementsByTagName("h1")
+        console.log(ele2, typeof ele2);
+        // geElementByClassName
+        let Ele2 = document.getElementsByClassName("Lik")
+        console.log(Ele2, typeof Ele2);
+
+        //querySelector
+        let ele3 = document.querySelector("#getel")
+        console.log(ele3);
+
+        //queryselectorAll
+        const Ele3 = document.querySelectorAll("#que")
+        document.getElementById('vue').innerHTML = "This is for Our purpose:" + Ele3[1].innerHTML;
+        console.log(Ele3);
+
+        //Travesing Element 
+        //Praent Node
+        let ele4 = document.querySelector(".rp")
+        console.log(ele4.parentNode);
+        //child nodes
+        let Ele4 = document.querySelector(".clas")
+        console.log(Ele4.lastChild);
+        console.log(Ele4.firstChild);
+        console.log(Ele4.firstElementChild.innerHTML);
+        console.log(Ele4.lastElementChild.innerHTML);
+        console.log(Ele4.childNodes);
+
+        //sibling element
+        let ele5 = document.querySelector(".rip")
+        console.log(ele5.previousSibling);
+
+
+        //CreateElement
+        let doc = document.createElement("div")
+        doc.innerHTML = "<h1>Am Waiting</h1>"
+        doc.id = "doc1"
+        //console.log(doc);
+        document.body.appendChild(doc)
+
+        //appendchild()
+        let Ele5 = document.createElement("li")
+        Ele5.innerHTML = "VIP";
+        lis.appendChild(Ele5)
+
+        //text content
+        let Ele6 = document.getElementsByClassName("clas")
+        Ele6.textContent = "Hello Bhai"
+        console.log(Ele6.textContent);
+
+        //inneradjacent()
+        let ele6 = document.getElementById("lis")
+        ele6.insertAdjacentHTML("beforebegin", "<li>Am the Danger</li>")
+
+
+
+    </script>
+</body>
+
+</html>
