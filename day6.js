@@ -10,3 +10,9 @@ console.log(p);
 // function chang(Cha){
 
 // }
+
+//function Hoisting
+
+//console.log(semi(hostl));
+
+
