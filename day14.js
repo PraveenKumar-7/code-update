@@ -168,22 +168,79 @@ setTimeout(function () {
 // },5000)
 
 //recursive
-function recursivefun(x) {
-    if (x === 0) {
-        setTimeout(function () { console.log("Code is executed"); }, 5000)
-        return
-    }
-    console.log("It's processing");
-    recursivefun(x - 1)
-}
-recursivefun(4)
+// function recursivefun(x) {
+//     if (x === 0) {
+//         setTimeout(function () { console.log("Code is executed"); }, 5000)
+//         return
+//     }
+//     console.log("It's processing");
+//     recursivefun(x - 1)
+// }
+// recursivefun(4)
 
-//setinterval
-var i = 6;
-var int = setInterval(function () {
-    console.log("Hello Welcome");
-    i++;
-    if (i > 5) {
-        clearInterval(int);
+// //setinterval
+// var i = 0;
+// var int = setInterval(function () {
+//     console.log("Hello Welcome");
+//     i++;
+//     if (i > 5) {
+//         clearInterval(int);
+//     }
+// }, 4000);
+
+
+//oops
+let user1 = {
+    name: "Sidhu",
+    age: 23,
+    login() {
+        console.log(this.name);
+        console.log("Hello You are logged in");
+    },
+    logout() {
+        console.log("You are Logged out");
     }
-}, 4000);
+}
+
+let user2 = {
+    name: "sj",
+    age: 23,
+    login() {
+        console.log(this.name);
+        console.log("Hello You are logged in");
+    },
+    logout() {
+        console.log("You are Logged out");
+    }
+}
+user1.login()
+user2.login()
+
+
+
+// class User {
+//     constructor(name1,age) {
+//         this.name1 = name1;
+//         this.age = age
+//     }
+//     login() {
+//         console.log(this.name1);
+//         console.log("Hello You are logged in");
+//     }
+//     logout() {
+//         console.log("You are Logged out");
+//     }
+// }
+// let userone=new User("Vinay",24)
+// User.login()
+
+
+//callback function 
+let func=function(){
+    console.log("Today");
+};
+let func1=function(call1){
+console.log("Tommorow");
+call1();
+};
+func1(func)
