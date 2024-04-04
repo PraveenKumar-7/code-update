@@ -132,3 +132,26 @@
 //     document.getElementById('inc-btn').addEventListener("click",increment)
 // }
 // createcount();
+
+//lexical scope
+
+function lexi(){
+    let van="Ram" 
+    function lexi2(){
+        console.log(van); 
+    }
+    lexi2();
+}
+
+lexi();
+//closure 
+
+    function z(){
+        let vf="Nandha"
+    
+    return function y(){
+        console.log(vf);
+    }
+}
+let x=z();
+
