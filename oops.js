@@ -265,3 +265,42 @@ function clso(){
     console.log(ds);
   }clso1();
 }clso();
+
+//CLASS
+class Bike{
+constructor(name7){
+  this.name7=name7;
+}
+getman(){
+  return (`My bike name is ${this.name7}`)
+}
+}
+const bike4=new Bike("R15")
+console.log(bike4.getman());
+
+//private
+// class Priv{
+//   #name
+//   constructor(name){
+//     this.#name=name;
+//   }
+//   #getman1(){
+//     console.log(`Hello am ${this.#name}`)
+//   }
+//   getset(){
+//     this.#getman1();
+//     console.log(this.#name);
+//   }
+// }
+// const EMN=new Priv('Vijay')
+// Priv.getset();
+
+//
+function call(){
+  console.log("function 1");
+}
+function call1(cls4){
+  console.log("function 2");
+  cls4;
+}
+call(call1());
