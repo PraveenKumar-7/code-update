@@ -84,27 +84,27 @@
 // }
 // console.log(obj9.obj10());
 
-//
-let student=35;
+// //
+// let student=35;
 
-if(student<=100 && student>=91){
-    console.log("outsanding");
-}
-else if(student<=90 && student>=81){
-    console.log("Excelent");
-}
-else if(student<=80 && student>=71){
-    console.log("very Good");
-}
-else if(student<=70 && student>=61){
-    console.log("Good");
-}
-else if(student<=60 && student>=41){
-    console.log("Average");
-}
-else{
-    console.log("Fail");
-}
+// if(student<=100 && student>=91){
+//     console.log("outsanding");
+// }
+// else if(student<=90 && student>=81){
+//     console.log("Excelent");
+// }
+// else if(student<=80 && student>=71){
+//     console.log("very Good");
+// }
+// else if(student<=70 && student>=61){
+//     console.log("Good");
+// }
+// else if(student<=60 && student>=41){
+//     console.log("Average");
+// }
+// else{
+//     console.log("Fail");
+// }
 
 //call apply bind
 const obj1={
@@ -116,9 +116,9 @@ const obj2={
     Age:25
 }
 let fun={
-f1:function(a,b){
-    console.log(`My name is${this.Namef} and my age is${this.Age}` ,a+b);
+f1:function(){
+    console.log(`My name is${this.Namef} and my age is${this.Age}`);
 }
 }
-let mfun=fun.f1.apply(obj1,[2,5])
-mfun();
+let mfun=fun.f1.apply(obj1)
+mfun

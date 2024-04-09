@@ -1,0 +1,115 @@
+// //Accessing array elements in js 
+// // let array=["Praveen","Vijay","Sanjay"]
+// // console.log(array[1]);
+
+// //change the array elements
+// // let array1=["Praveen","Vijay","Sanjay"]
+// // array1[2]="Kumar"
+// // console.log(array1[2]);
+
+// //add element end of an array
+// let array=["North","South","West"]
+// array.push("East")
+// console.log(array);
+
+// //add element biginning of an array
+// let array1=["North","South","West"]
+// array1.unshift("East")
+// console.log(array1);
+
+// //remove an element from the end 
+// let array2=["North","South","West"]
+// arr=array2.pop();
+// console.log(arr);
+
+// //remove element in beginning
+// let array3=["sheep","Goat","cow"]
+// array3.shift();
+// console.log(array3);
+
+// //finding the index of element 
+// let array4=["Lion","Tiger","Leopard","Hyena"]
+// let arr2=array4.indexOf("Leopard");
+// console.log(arr2);
+
+// //check if value is an array
+// let array5=["&&"]
+// let arr3=Array.isArray(array5)
+// console.log(arr3);
+
+// //delete element using splice method 
+// // let score=[3,2,9,4,5]
+// // let score1=score.splice(0,3)
+// // console.log(score1);
+// // console.log(score);
+
+// //inserting element using splice method 
+// // let score2=["thailand","Manali","shawlin"]
+// // let score1=score2.splice(1,0,"America","Germany")
+// // console.log(score2);
+
+// //replacing element using splice method
+// let score=["c","c++","js","java"]
+// let score1=score.splice(1,3,"React","Angular")
+// console.log(score);
+
+// //slice method
+// let scores=["x","v","b","n"]
+// console.log(scores.slice(1,3))
+
+// //includes()
+//  let Scores=["x","v","b","n"]
+// console.log(scores.includes("a"))
+
+// //find()
+// // let score3=[11,34,45,23]
+// // let score4=score3.find((num) =>{
+// // return num>40
+// // })
+// // console.log(score4);
+
+// let fin=[{name:"Pandy",Amt:100},{name:"Rohit",Amt:200},{name:"Rohit",Amt:200}]
+// console.log(fin.find(Gk => Gk.Amt>100));
+
+
+// //findindex
+// let ind=[1,3,6,4,8,6]
+// let ind1=ind.findIndex(ind => ind===6)
+// console.log(ind1);
+
+// //filter()
+// let filter1=[23,45,53,67,50]
+// let les=filter1.filter(c => c<50)
+// console.log(les);
+
+// //
+// let filter2=[2,5,6,8,4]
+// let Filter=filter2.filter((ui) => ui > 4 )
+// console.log(Filter);
+
+// //
+
+// //map    transformation logic  creates a new array from calling a function for every array element. map() does not 
+// //execute the function for empty elements. map() does not change the original array.
+// let map=[2,4,6,8]
+
+// function double(xe){
+// return xe*2
+// }
+// let maps=map.map(double)
+// console.log(maps);
+
+// //reduce()
+
+
+// //map
+// let 
+//map
+let map1=[2,4,5,7]
+let result=map1.map(x => x*2)
+console.log(result);
+
+//filter
+let filter1=[2,4,5,7,8,9]
+let res=filter1.filter(xe => xe>5)
+console.log(res);
