@@ -104,12 +104,112 @@
 
 // //map
 // let 
+// //map
+// let map1=[2,4,5,7]
+// let result=map1.map(x => x*2)
+// console.log(result);
+
+// //filter
+// let filter1=[2,4,5,7,8,9]
+// let res=filter1.filter(xe => xe>5)
+// console.log(res);
+
+//length
+// let arr=["jkvk"]
+// let arr1=arr.length;
+// console.log(arr1);
+
+// //string
+// let str="hello,boy"
+// let str1=str.length;
+// console.log(str1);
+
+// //unshift
+// let arr=[21,7,8]
+// let length=arr.unshift(2)
+// console.log(length);
+// console.log(arr);
+
+//replacing t'c++he elements using splice 
+let spl=["c","c++",'java',"Javascript",".Net"]
+let spl1=spl.splice(1,2)
+console.log(spl);
+
+
+//slice 
+//let arr=["a","b","c","d","e"]
+// let sliced=arr.slice(1,4)
+// console.log(sliced);
+// console.log(arr);
+
+//indexOf
+// let arr=["Mano","Vinay","Gopi","Charles"]
+// let indx=arr.indexOf("Vinay");
+// console.log(indx);
+
+//includes 
+// let arr=[1,2,3]
+// let inclu=arr.includes(3)
+// console.log(inclu);
+
+//find
+// let arr=[12,11,14,6,5]
+// console.log(arr.find(ele => ele <10));
+
+//findIndex
+// let arr=[11,12,23,45,23]
+// let points=arr.findIndex((ran)=>ran===23)
+// console.log(points);
+
+
+//callback
+function call(gem){
+    let bambo=["Viji","Gokul","Ajith"]
+    gem(bambo)
+}
+function process(bambo){
+    console.log("Valid Names are :" + bambo);
+}
+call(process)
+  
 //map
-let map1=[2,4,5,7]
-let result=map1.map(x => x*2)
-console.log(result);
+//let arr=[{
+//     name:"Vk",
+//     Age:20,
+// },{
+//     name:"mk",
+//     Age:19
+// },
+// {
+//     name:"hr",
+//     Age:21
+// }]
+// let map=arr.map((man)=> man.name)
+// console.log(map);
+
+// let arr=[2,4,5,3,7]
+// let map=arr.map((num)=>num * 3)
+// console.log(map);
+
 
 //filter
-let filter1=[2,4,5,7,8,9]
-let res=filter1.filter(xe => xe>5)
-console.log(res);
+// let arr=[1000,3000,2000,4000]
+// let Amt=arr.filter(score=> score<2000)
+// console.log(Amt);
+
+
+//reduce 
+// let arr=[1,2,3,4,5]
+// let reduced=arr.reduce((previous,current)=>previous+current)
+// console.log(reduced);
+
+//Every
+let arr=[2,4,5,7,8]
+let ever=arr.some(run=>run >5)
+console.log(ever);
+
+let arr1=[2,4,5,7,8]
+let ever1=arr1.some(run=>run <=0)
+console.log(ever1);
+
+
