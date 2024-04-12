@@ -308,8 +308,9 @@
 
 //foreach()
 // let arr1=["a","b","c","d"]
-// arr1.forEach(ele => 
-// console.log(ele));
+// arr1.forEach(ele => {
+// console.log(ele)
+//});
 
 //modifying the arra elements
 // let arr=[2,4,6,8,9]
@@ -321,7 +322,7 @@
 //console.log(arr);
 
 //at()
- let arr=[5,4,2,6,8]
+ //let arr=[5,4,2,6,8]
 // // let ind=-1;
 // // console.log(`the index of ${ind} is ${arr.at(ind)} `);
 // function res(){
@@ -330,7 +331,7 @@
 // console.log(res());
 
 //concat
-let arr1=[3,5,9]
-console.log(arr.concat(arr1));
+// let arr1=[3,5,9]
+// console.log(arr.concat(arr1));
 
 
