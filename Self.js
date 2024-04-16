@@ -162,10 +162,10 @@
 
 
 // function printPyramidTriangle(height) {
-  
+
 //     for (let i = 1; i <= height; i++) {
 //         let row = '';
-       
+
 //         for (let j = 1; j <= height - i; j++) {
 //             row += ' ';
 //         }
@@ -180,20 +180,227 @@
 // Test the function with height 5
 //printPyramidTriangle(5);
 
-n=5;
-for(i=1;i<=n;i++){
-    z="";
-    for(j=1;j<n-i;j++){
-        z+=" ";
-    }
-    for(s=1;s<=2*i-1;s++){
-        if(s===1 || s===2*i-1){
-            z+='*' 
-        }
-    else{
-        z+=' '
-    }
+// n=5;
+// for(i=1;i<=n;i++){
+//     z="";
+//     for(j=1;j<n-i;j++){
+//         z+=" ";
+//     }
+//     for(s=1;s<=2*i-1;s++){
+//         if(s===1 || s===2*i-1){
+//             z+='*' 
+//         }
+//     else{
+//         z+=' '
+//     }
+
+// }
+// console.log(z);
+// }
+
+// Program to display numbers from 1 to 3
+
+//16/04/2024
+
+// initialize variable i
+// let i = 1;
+
+// // while loop
+// while (i < 4) {
+//     console.log(i);
+//     i += 1;
+// }
+//
+// let x=0,y=0;
+// while(x>=0){
+//     y+=x;
+//     x=parseInt(prompt("Enter the Number:"));
+//     console.log(x)
+// }
+// console.log(`The sum of ${y}`);
+
+//const age = 31;
+//const ownsCar = false;
+
+// if (age >= 16 && age<=25) {
+//   console.log("Jerry is old enough to drive and has his own car.");
+// } else if(age>=26 && age<=30) {
+//   console.log("Temporary driver.");
+// }
+// else{
+//   console.log( "You wont drive")
+// }
+
+// const boyfriendIsPaying = true;
+// const isSale = true;
+
+// if (!boyfriendIsPaying || isSale) {
+//   console.log("Jesse will go shopping.");
+// } else {
+//   console.log("Jesse will not go shopping.");
+// }
+
+// let i=1;
+// while(i<=5){
+//     console.log("Hello");
+//     i++
+// }
+
+//array
+// let arr=[23,4,7,4,6,4]
+// let scr=arr.map(ele => ele <1)
+// console.log(scr);
+// const array = [1, 2, 3, 4, 5];
+// const sum = array.some(ele => ele>6);
+// console.log(sum); // Output: 15 (1 + 2 + 3 + 4 + 5 = 15)
+
+// const numbers = [3, 1, 5, 2, 4];​
+
+// numbers.sort((a, b) => a - b);​
+
+// console.log(numbers);
+
+// program to calculate positive numbers only
+// if the user enters a negative number, that number is skipped from calculation
+
+// negative number -> loop terminate
+// non-numeric character -> skip iteration
+
+// let sum = 0;
+// let number = 0;
+
+// while (number >= 0) {
+
+//     // add all positive numbers
+//     sum += number;
+
+//     // take input from the user
+//     number = parseInt(prompt('Enter a number: '));
+
+//     // continue condition
+//     if (isNaN(number)) {
+//         console.log('You entered a string.');
+//         number = 0; // the value of number is made 0 again
+//         continue;
+//     }
+
+// }
+
+// display the sum
+//console.log(`The sum is ${sum}.`);
+
+//infinity loop
+// let o=2
+// while(o>0)
+// {
+//     console.log("fun");
+//     o++;
+// }
+
+//switch
+// let traffic_color = prompt("Enter Your Color") ;
+// switch (traffic_color) {
+//     case "Red":
+//         console.log("Stop")
+//         break;
+//     case "Yellow":
+//         console.log("Get Ready");
+//         break;
+//     case "Green":
+//         console.log("Drive Now");
+//         break;
+//     default:
+//         console.log("Invalid Color");
+// }
+
+///function 
+// function fun(name){
+// console.log("Hello" +" "+ name+" "+"Welcome to my page");
+// }
+// let name=prompt("Enter Your name")
+// fun(name)
+
+// let age =prompt("Enter Your Age");
+// let myfun=(age<18)?()=>console.log("Baby"):()=>console.log("Adult");
+// myfun()
+
+//argument binding
+// let fun=function (){
+//     console.log(arguments);
+// }
+// fun(3,5,7)
+
+
+//object destructuring
+// const obj={age:23,
+//     name:"Praveen"}
+// const{
+//     name,age
+// } =obj;
+
+
+// console.log();
+// console.log(name);
+
+
+//function 1
+function fun(n){
+n=n+"";
+return n.split("").reverse("").join("")
+}
+console.log(fun(23456));
+
+//function 2
+const eve=number=>{
+if(number % 2===0){
+    console.log("Even numbers")
+}
+else{
+    console.log("odd numbers");
+}
+};
+eve(2)
+
+//function 3
+let  fun1=(h,m,s)=>{
+    return (h*60*60+m*60+s)*1000
+}
+console.log(fun1(2,1,1));
+
+//function 4
+let fun2=(name)=>
+{
+return `hello, ${name} how are you doing today?`
+}
+console.log(fun2("praveen"));
+
+//function 5
+
+const fun3=year=>
+
+{
+    // if(year>1 && year<=1000){
+    //     console.log(1);
+    // }
+    // else if(year>=1001 && year<=2000){
+    //     console.log(2);
+    // }
+    // else if(year>=2001 && year<=3000){
+    //     console.log(3);
+    // }
+    // else{
+    //     console.log("invalid year");
+    // }
+    return Math.ceil(year/100)
     
 }
-console.log(z);
+console.log(fun3(4000));
+
+//function 6
+const fun4=str=>{
+      str+=arr
+    let arr=[]
+    return arr.length
 }
+console.log(fun4("hello"));
+
