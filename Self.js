@@ -317,90 +317,285 @@
 // function fun(name){
 // console.log("Hello" +" "+ name+" "+"Welcome to my page");
 // }
-// let name=prompt("Enter Your name")
-// fun(name)
+// // let name=prompt("Enter Your name")
+// // fun(name)
 
-// let age =prompt("Enter Your Age");
-// let myfun=(age<18)?()=>console.log("Baby"):()=>console.log("Adult");
-// myfun()
+// // let age =prompt("Enter Your Age");
+// // let myfun=(age<18)?()=>console.log("Baby"):()=>console.log("Adult");
+// // myfun()
 
-//argument binding
-// let fun=function (){
-//     console.log(arguments);
+// //argument binding
+// // let fun=function (){
+// //     console.log(arguments);
+// // }
+// // fun(3,5,7)
+
+
+// //object destructuring
+// // const obj={age:23,
+// //     name:"Praveen"}
+// // const{
+// //     name,age
+// // } =obj;
+
+
+// // console.log();
+// // console.log(name);
+
+
+// //function 1
+// function fun(n){
+// n=n+"";
+// return n.split("").reverse("").join("")
 // }
-// fun(3,5,7)
+// console.log(fun(23456));
+
+// //function 2
+// const eve=number=>{
+// if(number % 2===0){
+//     console.log("Even numbers")
+// }
+// else{
+//     console.log("odd numbers");
+// }
+// };
+// eve(2)
+
+// //function 3
+// let  fun1=(h,m,s)=>{
+//     return (h*60*60+m*60+s)*1000
+// }
+// console.log(fun1(2,1,1));
+
+// //function 4
+// let fun2=(name)=>
+// {
+// return `hello, ${name} how are you doing today?`
+// }
+// console.log(fun2("praveen"));
+
+// //function 5
+
+// const fun3=year=>
 
 
-//object destructuring
-// const obj={age:23,
-//     name:"Praveen"}
-// const{
-//     name,age
-// } =obj;
+//     // if(year>1 && year<=1000){
+//     //     console.log(1);
+//     // }
+//     // else if(year>=1001 && year<=2000){
+//     //     console.log(2);
+//     // }
+//     // else if(year>=2001 && year<=3000){
+//     //     console.log(3);
+//     // }
+// else{
+//     console.log("invalid year");
+// }
+//     return Math.ceil(year/100)
+
+// }
+// console.log(fun3(4000));
+
+// //function 6
+// const fun4=str=>{
+//       str+=arr
+//     let arr=[]
+//     return arr.length
+// }
+// console.log(fun4("hello"));
+// function sum(x = 4, y = 6) {
+
+//     // return sum
+//     return x + y;
+// }
+
+// console.log(sum(5, 15));  // 20 
+// console.log(sum(7));        // 12
+// console.log(sum());          // 8
 
 
-// console.log();
-// console.log(name);
+//17/04/2024
+
+//Arrow function
+
+// const fun=(a)=>{
+// return a*3
+// }
+// console.log(fun(2));
+
+//arr function inside the regular function + constructor function
+
+// function fun1(name1,age1){
+//     this.name=name1,
+//     this.age=age1
+//     return `Hello, am ${this.name1} my age is ${this.age1}`
+//     // this.fun2=()=>{
+//     //     console.log(this.name);
+
+//     // let fun3=()=>{
+//     //     console.log(this.age);
+//     // }
+//     // fun3();
+
+// }
+// let x=new fun1("vijay",24)
+// let y=new fun1("Hari",25)
+// console.log(x);
+
+//settimeout function
+// program to display a text using setTimeout method
+// function greet() {
+//     console.log('Hello world');
+// }
+
+// let intervalId = setTimeout(greet, 3000);
+// let intervalId1= setTimeout(greet, 3000);
+// let intervalId2= setTimeout(greet, 3000);
+// console.log( 'id :'+ intervalId);   
+// console.log( 'id :'+ intervalId1);   
+// console.log( 'id :'+ intervalId2);  
 
 
-//function 1
-function fun(n){
-n=n+"";
-return n.split("").reverse("").join("")
-}
-console.log(fun(23456));
+// setTimeout(function(){
+//     console.log("praveen");
+// },4000)
 
-//function 2
-const eve=number=>{
-if(number % 2===0){
-    console.log("Even numbers")
-}
-else{
-    console.log("odd numbers");
-}
-};
-eve(2)
 
-//function 3
-let  fun1=(h,m,s)=>{
-    return (h*60*60+m*60+s)*1000
-}
-console.log(fun1(2,1,1));
+// program to display time every 3 seconds
 
-//function 4
-let fun2=(name)=>
-{
-return `hello, ${name} how are you doing today?`
-}
-console.log(fun2("praveen"));
 
-//function 5
+// let clearId;
+// function set(){
+//     console.log("Hello");
+//     clearId=setTimeout(set,3000)
+// }
+// set()
 
-const fun3=year=>
+// function clear(){   //clearTimeout
+//     clearTimeout(clearId)
+//     console.log("Diplay stooped");
+// }
+// setTimeout(clear,10000)
 
-{
-    // if(year>1 && year<=1000){
-    //     console.log(1);
-    // }
-    // else if(year>=1001 && year<=2000){
-    //     console.log(2);
-    // }
-    // else if(year>=2001 && year<=3000){
-    //     console.log(3);
-    // }
-    // else{
-    //     console.log("invalid year");
-    // }
-    return Math.ceil(year/100)
-    
-}
-console.log(fun3(4000));
 
-//function 6
-const fun4=str=>{
-      str+=arr
-    let arr=[]
-    return arr.length
-}
-console.log(fun4("hello"));
+//settimeout  callback function
+// Callback Function Example
+// function greet(name, myFunction) {
+//     console.log('Hello world');
+
+//     // callback function
+//     // executed only after the greet() is executed
+//     myFunction(name);
+// }
+
+// // callback function
+// function sayName(name) {
+//     console.log('Hello' + ' ' + name);
+// }
+
+// // calling the function after 2 seconds
+// setTimeout(greet, 2000, 'John', sayName);
+
+// function vb(){
+//     console.log("Vijay");
+// }
+// function mb(fun){
+//     console.log("Praveen");
+//     fun()
+// }
+// vb(mb)
+
+// program to stop the setInterval() method after five times
+
+// let count = 0;
+
+// // function creation
+// let interval = setInterval(function(){
+
+//     // increasing the count by 1
+//     count += 1;
+
+//     // when count equals to 5, stop the function
+//     if(count === 5){
+//         clearInterval(interval);
+//     }
+
+// //     // display the current time
+// //     let dateTime= new Date();
+// //     let time = dateTime.toLocaleTimeString();
+// //     console.log(time);
+
+// // }, 2000);
+
+// let cnt = 0;
+// let inter = setInterval(function () {
+//     cnt += 1;
+//     if (cnt === 5) {
+//         clearInterval(inter)
+//     }
+//     console.log("Hello");
+// }, 3000)
+
+// //promise
+// const data = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const name = undefined
+//         if (name) {
+//             resolve(name)
+//         } else {
+//             reject(new Error("Invalid name"));
+//         }
+//     }, 5000)
+// })
+// data.then((name) => {
+//     console.log(name);
+//  }).catch((error) => { 
+//     console.log(error.stack)
+//  }).finally(() => {
+//     console.log("Test verified");
+//   })
+
+
+
+  //Exception handling 
+// try{
+//     let res=quote(6,0)
+//     if(res===Infinity){
+//         throw new Error("no result found")
+//     }
+//     console.log(res);
+// }
+// catch(error){
+//     console.log(error.name);
+// }
+// finally{
+//     console.log("Scucess");
+// }
+
+// function quote(a,b){
+//     return a/b
+// }
+
+
+//string prototype
+//at()
+// let str="hello buddy 12"
+// let arr= str.at(-2)
+// console.log(arr);
+
+// let str = "Hello Welcome"
+// //big() gives the html content
+// let arr=str.big()
+// console.log(arr);
+
+//bold()
+// let str="Hello"
+// let arr=str.bold()
+// console.log(arr);
+
+//chartcodeat()
+// let str="hi welcome team"
+// let arr=str.charCodeAt(4)
+// console.log(arr);
+
 
