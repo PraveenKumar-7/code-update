@@ -1,11 +1,77 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+        <input type="date" onclick="arr()" id="birthday" name="Change Date">
+  <input type="submit">
+  <button >Click Me</button>
     <script src="Self.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar Number Addition</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Calendar Number Addition</h1>
+
+<div class="calendar" id="calendar">
+  <!-- This area will be populated with days -->
+</div>
+
+<div id="result"></div>
+
+<script>
+// Function to create calendar days
+function createCalendar() {
+  const calendar = document.getElementById('calendar');
+  const daysInMonth = 31; // Change this based on the month
+  for (let i = 1; i <= daysInMonth; i++) {
+    const day = document.createElement('div');
+    day.classList.add('day');
+    day.textContent = i;
+    day.addEventListener('click', function() {
+      addNumber(i);
+    });
+    calendar.appendChild(day);
+  }
+}
+
+// Function to add two numbers and display result
+function addNumber(num) {
+  const result = document.getElementById('result');
+  result.textContent = `Clicked number: ${num}, Result: ${num + 2}`;
+}
+
+// Call function to create calendar
+createCalendar();
+</script>
+
 </body>
 </html>

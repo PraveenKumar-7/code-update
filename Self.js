@@ -557,7 +557,7 @@
 
 
 
-  //Exception handling 
+//Exception handling 
 // try{
 //     let res=quote(6,0)
 //     if(res===Infinity){
@@ -599,3 +599,110 @@
 // console.log(arr);
 
 
+//Promise
+
+// let promise = new Promise((resolve,reject)=>{
+//   let a = 6;
+//   if(a===5){
+//     resolve("success")
+//   }else{
+//     reject("failure")
+//   }
+// })
+// promise.then((result)=> console.log(result)).catch(err=> console.log(err)).finally(()=> console.log("finallly"))
+
+
+// Promise.all
+// Promise.allSettled
+// Promise.any
+// Promise.race
+
+//promise 1
+// const sandy=new Promise((resolve,reject)=>{
+// const data=9;
+// if(data===7){
+//   resolve("Success")
+// // }
+// // else{
+// //   reject("Failure")
+// // }
+// // }).then((data)=>{console.log(data);}).catch((data)=>{console.log(data);})
+
+// //Promise.all
+// const promise1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Promise 1 resolved');
+//   }, 5000);
+// });
+
+// const promise2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Promise 2 resolved');
+//   }, 7000);
+// });
+
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Promise is reject');
+//   }, 1000);
+// });
+
+// // Using Promise.all to wait for all promises to resolve
+// Promise.all([promise1, promise2, promise3])
+//   .then((results) => {
+//     console.log('All promises resolved');
+//     console.log('Results:', results); // Array containing resolved values of all promises
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error); // Will be called if any of the promises reject
+//   });
+
+
+// //promise.allsetteled
+// const mypromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise Reached")
+//   }, 5000)
+// })
+// const mypromise1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise 1 reached")
+//   }, 2000)
+// })
+
+// const mypromise2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("Promise 2 reached")
+//   }, 1000)
+// })
+// Promise.allSettled([mypromise, mypromise1, mypromise2]).then((res) => {
+//   console.log(res);
+// }).catch((err) => {
+//   console.log("Error : ", err);
+// })
+
+
+// function futuredate(currn){
+//   let date=2 
+//   return currn+date
+// }
+// console.log(futuredate(19));
+
+//let rko=document.getElementsByClassName("vijay").innerHTML=
+
+//+(date. getDate());
+
+//date. setDate(20)
+// function arr(){
+    
+// const date = new Date()
+// const date1=date.getDate()+2
+// console.log(date1) ;
+// }
+const date=''
+function arr(){
+const date=new date()
+
+const kkm=date.setDate(date.getDate()+1)
+console.log(kkm);
+}
