@@ -510,22 +510,22 @@
 // let count = 0;
 
 // // function creation
-// let interval = setInterval(function(){
+let interval = setInterval(function(){
 
-//     // increasing the count by 1
-//     count += 1;
+    // increasing the count by 1
+    count += 1;
 
-//     // when count equals to 5, stop the function
-//     if(count === 5){
-//         clearInterval(interval);
-//     }
+    // when count equals to 5, stop the function
+    if(count === 5){
+        clearInterval(interval);
+    }
 
-// //     // display the current time
-// //     let dateTime= new Date();
-// //     let time = dateTime.toLocaleTimeString();
-// //     console.log(time);
+    // display the current time
+    let dateTime= new Date();
+    let time = dateTime.toLocaleTimeString();
+    console.log(time);
 
-// // }, 2000);
+}, 2000);
 
 // let cnt = 0;
 // let inter = setInterval(function () {

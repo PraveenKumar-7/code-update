@@ -12,10 +12,10 @@
 // // array.push("East")
 // // console.log(array);
 
-// // //add element biginning of an array
-// // let array1=["North","South","West"]
-// // array1.unshift("East")
-// // console.log(array1);
+// add element biginning of an array
+// let array1=["North","South","West"]
+// array1.unshift("East")
+// console.log(array1);
 
 // // //remove an element from the end 
 // // let array2=["North","South","West"]
@@ -335,3 +335,26 @@
 // console.log(arr.concat(arr1));
 
 
+//array.from()
+//array.reduce()
+//Object.is()
+//Object.assign()
+//Object.create()
+//object.fromEntries()
+//object.entries()
+//object.keys()
+//object.values()
+//difference between Object vs new Map()
+//generator functions
+// recurrsive functions
+
+
+//entries 
+const arr=["a","b","c"];
+const scr=arr.keys();
+for(let key of scr){
+    console.log(key);
+}
+
+// for(let entry of scr)
+// console.log(entry);
